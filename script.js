@@ -22,6 +22,7 @@ function handleFormSubmit(event){
     };
  
     //CREATE CARD HERE
+    var destCard = createDestinationCard(destName,destLocation,destPhoto,destDescription)
 
     var wishList = document.querySelector("#destinationContainer");
 
@@ -29,6 +30,7 @@ function handleFormSubmit(event){
        document.querySelector("#title").textContent = 'My Wish List'  
     };
 
+    wishList.appendChild(destCard)
 
 }
 
