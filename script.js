@@ -30,7 +30,7 @@ function handleFormSubmit(event){
        document.querySelector("#title").textContent = 'My Wish List'  
     };
 
-    wishList.appendChild(destCard)
+    document.querySelector("#destinationContainer").appendChild(destCard)
 
 }
 
@@ -45,7 +45,7 @@ function createDestinationCard(name, location, photoURL, description){
     
     var constantPhotoUrl ='images/signpost.jpg';
 
-    if (PhotoURL.length === 0 ) {
+    if (photoURL.length === 0 ) {
         img.setAttribute('src', constantPhotoUrl);
     }
     else{
